@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    position: relative;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+a {
+    color: #b1b1b1;
+}
+
+a:hover {
+    color: rgb(253, 93, 0);
+}
+.page-header {
+    width: 100vw;
+    padding: .8rem 2rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: rgba(71, 36, 36, 0.3) 0 1px 4px 1px;
+    position: sticky;
+    top: 0;
+    grid-area: header;
+}
+
+.logo {
+    width: 50px;
+}
+
+.share-btn img {
+    height: 2rem;
+}
+
+.aside-bar {
+    padding: 3rem;
+    background-color: #f7f7f7;
+    border-right: solid #f4f4f4 1px;
+    grid-area: aside;
+}
+
+.aside-bar li {
+    margin: .5rem;
+}
+
+.page-article {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    grid-area: main;
+}
+
+.article-header {
+    height: 20vh;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("../img/polina-kuzovkova-zbPC6gHb72Q-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: .4rem;
+    box-shadow: rgba(71, 36, 36, 0.3) 0 3px 4px 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    gap: 1rem;
+}
+
+.article-title {
+    color: #fff;
+}
+
+
+.author {
+    color: rgb(253, 93, 0);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-img {
+    width: 60px;
+    height: 60px;
+    mask-clip: content-box;
+    border-radius: 50%;
+}
+
+.page-article p {
+    padding: 0 2rem 1rem;
+    color: #b1b1b1;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.page-footer {
+    padding: 1rem;
+    background-color: #fff;
+    border-top: solid rgb(253, 93, 0) 2px;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-social {
+    height: 35px;
+}
